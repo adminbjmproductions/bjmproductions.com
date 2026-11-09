@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BJM Productions · Video Editing Portfolio</title>
+<meta name="description" content="Video and podcast editing by BJM Productions. Watch recent work, see services, and get a quote.">
+<style>
+:root{--bg:#0f0e0d;--panel:#1a1816;--tx:#f3efe8;--mu:#a8a193;--am:#f2a93b;--bd:#302c27}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.1;margin:0}
+h1{font-size:clamp(40px,8vw,78px);margin-bottom:16px}
+h2{font-size:clamp(28px,4.5vw,40px);margin-bottom:10px}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(circle at 30% 20%,#3a2a14,#0f0e0d 70%)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,14,13,.55),rgba(15,14,13,.8))}
+.hero>*{position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px}
+nav b{letter-spacing:.16em;font-size:14px}
+nav a{text-decoration:none;color:var(--tx);opacity:.8;margin-left:20px}
+nav a:hover{opacity:1}
+.hc{padding:40px 0 80px}
+.lede{color:#d6d0c4;max-width:540px;font-size:19px}
+.btn{display:inline-block;background:var(--am);color:#1a1205;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:999px;margin-top:22px}
+.btn.o{background:none;color:var(--tx);border:1px solid #ffffff55;margin-left:8px}
+section{padding:70px 0;border-top:1px solid var(--bd)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}
+.v{background:var(--panel);border:1px solid var(--bd);border-radius:14px;overflow:hidden}
+.v video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.v div{padding:14px 16px}
+.v b{display:block}
+.v span{color:var(--mu);font-size:14px}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:28px}
+.c{background:var(--panel);border:1px solid var(--bd);border-radius:14px;padding:22px}
+.c h3{margin:0 0 6px;font-size:18px}
+.c p{margin:0;color:var(--mu);font-size:15px}
+.c i{display:block;color:var(--am);font:700 13px/1 system-ui;letter-spacing:.1em;font-style:normal;margin-bottom:10px}
+footer{border-top:1px solid var(--bd);padding:28px 0 40px;color:var(--mu);font-size:14px}
+@media (prefers-reduced-motion:reduce){.hero video{display:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+<video autoplay muted loop playsinline poster="" aria-hidden="true"><source src="media/hero.mp4" type="video/mp4"></video>
+<div class="w"><nav><b>BJM PRODUCTIONS</b><span><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></span></nav></div>
+<div class="w hc">
+<h1>Edits that keep people watching.</h1>
+<p class="lede">Video and podcast editing for creators and brands. Clean cuts, sharp pacing and polished sound, delivered on time.</p>
+<a class="btn" href="#work">Watch my work</a><a class="btn o" href="mailto:hello@bjmproductions.com?subject=Editing%20enquiry">Get a quote</a>
+</div>
+</header>
+
+<main class="w">
+<section id="work">
+<h2>Recent work</h2>
+<p class="lede" style="color:var(--mu)">A selection of projects I’ve edited.</p>
+<div class="g">
+<div class="v"><video controls preload="metadata" playsinline><source src="media/work-1.mp4" type="video/mp4"></video><div><b>Project title one</b><span>Podcast edit · Client name</span></div></div>
+<div class="v"><video controls preload="metadata" playsinline><source src="media/work-2.mp4" type="video/mp4"></video><div><b>Project title two</b><span>Short-form clips · Client name</span></div></div>
+<div class="v"><video controls preload="metadata" playsinline><source src="media/work-3.mp4" type="video/mp4"></video><div><b>Project title three</b><span>YouTube edit · Client name</span></div></div>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="sv">
+<div class="c"><i>01</i><h3>Podcast editing</h3><p>Filler words and stutters removed, audio cleaned, levels balanced, and your branded intro added.</p></div>
+<div class="c"><i>02</i><h3>Short-form clips</h3><p>The best moments cut for vertical video on Reels, TikTok and Shorts.</p></div>
+<div class="c"><i>03</i><h3>Long-form video</h3><p>Story-led edits for YouTube and brand content, with pacing, graphics and sound.</p></div>
+<div class="c"><i>04</i><h3>Client portal</h3><p>One place to leave timestamped notes, track deadlines and follow your project.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Let’s make something.</h2>
+<p class="lede" style="color:var(--mu)">Tell me about your project and I’ll reply with a quote.</p>
+<a class="btn" href="mailto:hello@bjmproductions.com?subject=Editing%20enquiry">hello@bjmproductions.com</a>
+<a class="btn o" style="border-color:var(--bd)" href="https://claude.ai/artifact/RwHhBbzEX8rJAVHazPZ1gs">Client portal</a>
+</section>
+</main>
+<footer><div class="w">© <span id="y"></span> BJM Productions</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
